@@ -1,4 +1,4 @@
-#Automated API Testing using Cucumber
+# Automated API Testing using Cucumber
 
 This project showcases automated tests for validating Place API's using Cucumber and REST Assured. It leverages the power of Cucumber for behavior-driven development (BDD) testing and RestAssured for robust API testing. Here's an overview of the project structure and key components:
 
@@ -6,7 +6,7 @@ This project showcases automated tests for validating Place API's using Cucumber
 1. Java 8 or higher
 2. Maven
 
-#Dependencies
+# Dependencies
 
 **Cucumber:** The project relies on Cucumber for implementing behavior-driven development (BDD) tests. It uses the Cucumber Java and Cucumber JUnit dependencies (io.cucumber:cucumber-java and io.cucumber:cucumber-junit) with version 7.12.0. These dependencies enable you to write and execute Cucumber feature files with step definitions.
 
@@ -47,10 +47,11 @@ The feature file (.feature file) contain the high-level descriptions of the test
 
 To run the tests, execute the feature files using a test runner, such as JUnit or TestNG, in your preferred IDE or through the command line.
 
-#Reporting
+# Reporting
+
 Test reports are automatically generated after test execution, providing insights into test results and outcomes. Reports can be found in the default output directory specified in your testing framework configuration.
 
-#Jenkinsfile
+# Jenkinsfile
 
 The Jenkinsfile contains a declarative Jenkins pipeline that automates the build and execution of the API-Cucumber project. The pipeline is divided into several stages, each responsible for a specific set of tasks.
 
@@ -66,16 +67,16 @@ The Jenkinsfile contains a declarative Jenkins pipeline that automates the build
 
 Make sure you have Jenkins installed and properly configured to execute this pipeline. Additionally, ensure that you have the necessary dependencies and environment variables set up correctly for the project.
 
-#TestRunner
+# TestRunner
 
 The TestRunner class is a JUnit test runner class that configures and executes Cucumber tests for the API-Cucumber project. It utilizes the Cucumber library and JUnit framework to execute behavior-driven development (BDD) tests written in Gherkin syntax.
 
 The class is annotated with the @RunWith(Cucumber.class) annotation, which indicates that the Cucumber test runner should be used to execute the tests. The @CucumberOptions annotation is used to specify the configuration options for the Cucumber execution.
 
-#Getters and Setters & Yaml
+# Getters and Setters & Yaml
 
 
 Within the project, a data.yaml file containing secret code values is utilized. The getters and setters class enables the retrieval of these values from data.yaml. The dataReader class reads and maps these values to the ObjectMapper Java class. The base class calls the method of the dataReader class using its object, while the utils class extends the base class.
 
-#Conclusion
+# Conclusion
 This project demonstrates a powerful automated API testing framework utilizing Cucumber, REST Assured, and other essential dependencies. With its robust testing capabilities and comprehensive reporting, it enables efficient and reliable validation of Place API functionality. The pipeline automation and integration with Jenkins further streamline the testing process, enhancing the overall software development and quality assurance workflow.
